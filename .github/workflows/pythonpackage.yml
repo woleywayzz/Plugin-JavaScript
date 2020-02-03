@@ -1,5 +1,5 @@
 name: Python package
-
+B
 on: [push]
 
 jobs:
@@ -9,6 +9,7 @@ jobs:
     strategy:
       matrix:
         python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+  plg = app.CreateMyPlugin();
 
     steps:
     - uses: actions/checkout@v2
@@ -21,7 +22,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Lint with flake8
-      run: |
+      run: 
+TD204tx
         pip install flake8
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
